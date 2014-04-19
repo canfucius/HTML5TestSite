@@ -1,0 +1,51 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Testing Stuff</title>
+    <script type="text/javascript" src="JS/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="JS/Default.js"></script>
+</head>
+<body>
+    <form id="mainpage" method="post">
+        <div style="clear:both;" id="dbInput">
+            <label for="linedesc">Description:</label>&nbsp;
+            <input type="text" id="linedesc" name="linedesc" />
+            <br /><br />
+            <input id="fruits" name="options1" value="fruits" type="radio" />
+            <label for="fruits">Fruits</label>&nbsp;
+            <input id="candies" name="options1" value="candies" type="radio" />
+            <label for="candies">Candies</label>&nbsp;
+            <input id="snacks" name="options1" value="snacks" type="radio" />
+            <label for="snacks">Snacks</label>
+            <br /><br />
+            <label for="options2">Choose beverage:</label>&nbsp;
+             <select id="options2" name="options2">
+                <option value="Coca-Cola">Coca-Cola</option>
+                <option value="Sprite">Sprite</option>
+                <option value="Root Beer">Root Beer</option>
+                <option value="Orange Juice">Orange Juice</option>
+            </select>
+            <br /><br />
+            <input type="submit" id="submit1" name="submit1" value="Submit" />
+        </div>
+    </form>
+
+    <div style="clear:both;">
+        <br /><br />
+    </div>
+    <div style="clear:both;" id="txtHolder">
+        <input id="enterText" />
+        <br /><br />
+        Hi! I'm text!
+        <p>I am a paragraph.</p>
+        <button id="submitText">Click Me</button> 
+    </div>
+    <div id="results">
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿@{
+    var linedesc = Request.Form["linedesc"];
+    var datemade = DateTime.Now.ToString();
+    var food = Request.Form["options1"];
+    var drinks = Request.Form["options2"];
+    
+    string[] data = new String[4] {linedesc, datemade, food, drinks};
+    
+    // Go back to Default.html and keep values selected, ie. values don't reset
+    var blah = "hi";
+
+    Response.Cache.SetCacheability(HttpCacheability.NoCache); 
+        
+    if (IsPost)
+    {
+        ViewModels.Default vm = new ViewModels.Default(linedesc, food, drinks, null);
+        vm.Save();
+    }
+    Json.Write(data, Response.Output);
+    
+}
